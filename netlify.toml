@@ -1,0 +1,8 @@
+# Deploys the React frontend only. The Express backend is hosted separately.
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
